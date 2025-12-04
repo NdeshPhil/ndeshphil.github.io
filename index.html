@@ -3,197 +3,364 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ApoConsult Solutions</title>
+  <title>ApoConsult Solutions - Human Capital Experts</title>
+  <!-- Tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-<style>
-.sponsors-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 30px;
-      flex-wrap: wrap; /* allows wrapping on smaller screens */
-    }
-
-    .sponsors-container img {
-      height: 200px;
-      width: auto;
-      transition: transform 0.3s ease;
-    }
-
-    .sponsors-container img:hover {
-      transform: scale(1.1);
-    }
-
-    .sponsors-title {
-      text-align: center;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-  </style>
-
+  <!-- Custom CSS -->
+  <link href="style.css" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-gray-50 text-gray-800">
-  <header class="bg-blue-900 text-white p-6">
-    <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">ApoConsult Solutions</h1>
-      <nav class="space-x-4">
-        <a href="#about" class="hover:underline">About</a>
-        <a href="#services" class="hover:underline">Services</a>
-        <a href="#contact" class="hover:underline">Contact</a>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  
+  <!-- Header & Navigation -->
+  <header class="bg-blue-900 text-white p-6 shadow-lg sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
+      <div class="flex items-center space-x-3 mb-4 md:mb-0">
+        <div class="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center">
+          <i class="fas fa-users text-blue-900"></i>
+        </div>
+        <h1 class="text-2xl md:text-3xl font-bold">ApoConsult Solutions</h1>
+      </div>
+      <nav class="flex space-x-4 md:space-x-6">
+        <a href="#about" class="hover:text-yellow-400 transition duration-300 font-medium"><i class="fas fa-building mr-2"></i>About</a>
+        <a href="#services" class="hover:text-yellow-400 transition duration-300 font-medium"><i class="fas fa-cogs mr-2"></i>Services</a>
+        <a href="#clients" class="hover:text-yellow-400 transition duration-300 font-medium"><i class="fas fa-handshake mr-2"></i>Clients</a>
+        <a href="#contact" class="hover:text-yellow-400 transition duration-300 font-medium"><i class="fas fa-envelope mr-2"></i>Contact</a>
       </nav>
     </div>
   </header>
 
-  <section class="max-w-6xl mx-auto p-6 text-center">
-    <img src="images/1.png" alt="Teamwork" class="w-full h-96 object-cover rounded-lg mb-6">
-    <h2 class="text-xl font-bold text-blue-900 mb-4">About Our Company</h2>
-    <p class="mb-4">ApoConsult Solutions is a leading consultation agency that provides expert human capital solutions. Our team of experienced consultants helps clients overcome challenges and achieve business goals through tailored services and long-term partnerships.</p>
-    <h2 class="text-xl font-bold text-blue-900 mb-4">Making a Difference Together</h2>
-    <p class="mb-4">Our support services can help organizations to manage their human resources effectively. We offer a wide range of HR services, including recruitment and placement, performance management, employee relations, skills and capacity building, and HR compliance programs.
-We also provide corporate support services to help organizations manage their business effectively. Our team can help setting up and implementing corporate governance frameworks, dispute, grievance and conflict resolution mechanisms, support boards of directors in running their activities and other corporate issues.
-We design our programs to help sustain performance of the organization, teams and individuals and enable the organization to compete effectively in today's turbulent business world. 
-We tailor our consultancy to the specific needs of the client and through long-term relationships, ensuring there is transfer of appropriate knowledge and skills and change towards desired behavior and attitude goals.</p>
-
-   <h2 class="text-xl font-bold text-blue-900 mb-4">Vision</h2>
-   <p class="mb-4">Our vision is to be the leading provider of customized human capital consultation services in industry. We aim to achieve our vision by;</p>
-    <ul class="list-disc list-inside mb-4 text-left">
-<center>
-      <li>Building trust-based relationships with clients.</li>
-      <li>Staying ahead with industry trends and best practices.</li>
-      <li>Attracting top talent and fostering a collaborative work environment.</li>
-      <li>Committing to excellence and exceeding client expectations.</li>
-      <li>Expanding our reach regionally and globally.</li>
-</center>
-    </ul> 
-<h2 class="text-xl font-bold text-blue-900 mb-4">Mission</h2>
-    <p class="mb-4">Our mission is to provide customized human capital consultation services that help our clients overcome their challenges and achieve their business objectives. We aim to achieve our mission by;</p>
-    <ul class="list-disc list-inside text-left">
-<center>
-      <li>Understanding client needs and challenges.</li>
-      <li>Delivering tailored, client-specific solutions.</li>
-      <li>Continuously enhancing our services for optimal results.</li>
-      <li>Fostering innovation and collaboration within our team.</li>
-</center>
-    </ul>
-<h2 class="text-xl font-bold text-blue-900 mb-4">Vision</h2>
-   <p class="mb-4">Our vision is to be the leading provider of customized human capital consultation services in industry. We aim to achieve our vision by;</p>
-    <ul class="list-disc list-inside mb-4 text-left">
-<center>
-      <li>Building trust-based relationships with clients.</li>
-      <li>Staying ahead with industry trends and best practices.</li>
-      <li>Attracting top talent and fostering a collaborative work environment.</li>
-      <li>Committing to excellence and exceeding client expectations.</li>
-      <li>Expanding our reach regionally and globally.</li>
-</center>
-    </ul> 
-
-  </section>
-
-<center>
-  <section class="bg-gray-100 p-6" id="services">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-xl font-bold text-blue-900 mb-4 text-center">Services Offered</h2>
-      <img src="images/2.png" alt="Consultation" class="w-full h-80 object-cover rounded-lg mb-6">
-      <ul class="none">
-        <li><strong>Conflict & Dispute Resolution</strong></li>
-<p>Our expert negotiators assists organizations to navigate complex disputes and to reach mutually acceptable solutions. We work closely with all parties involved to understand their concerns / interests and find solutions that meets everyone's satisfaction.</p>
-        <li><strong>Negotiations</strong></li>
-<p> We help organizations negotiate contracts, partnerships, and other business agreements. Our team has extensive experience in negotiations and can help you get the best possible deal.</p>
-        <li><strong>Policy Advocacy</strong></li>
-<p>We offer policy advocacy services to help influence government policies and regulations that affect businesses. Our team assists organizations / institutions to navigate the complex policy-making process and develop effective strategies to achieve their policy goals.</p>
-        <li><strong>Training and Capacity Development</strong></li>
-<p> Our training and capacity development services can help institutional teams develop the skills and knowledge they need to succeed. We offer a wide range of training programs customized to organizations' specific needs.</p>
-        <li><strong>Mediations and Conciliations</strong></li>
-<p>Our expert mediators and conciliators assists institutions to resolve disputes and conflicts in an amicable and respectful manner. We work closely with all parties involved to find a mutually acceptable solutions.</p>
-        <li><strong>Employee & Industrial Relations</strong></li>
-<p>We offer industrial relations services to help organizations manage their relationship with their employees and unions. Our team assists in developing effective labor relations strategies, negotiate collective bargaining agreements, and manage disputes.</p>
-
-        <li><strong>HR Support Services (recruitment, outsourcing, compliance, etc.)</strong></li>
-<p>Our HR support services assists organizations to manage their human resources effectively. We offer a wide range of HR services including, organizational reviews, local and international recruitment and selection; labor outsourcing and management, performance management, establishment of HR processes, HR compliance & social audits, HR policies and procedures i.e disciplinary, grievance and workplace grievance investigations, contracts of employment, employee separation i.e redundancies, terminations & dismissal advisory support, exit interviews, career counseling, mentorship and coaching.</p>
-        <li><strong>Compliance & Certification Support</strong></li>
-<p> Assist Businesses and Organisations in their Voluntary Sustainability Standards (VSS), compliance and certification journey, through pre-audits, compliance training, documentation and preparedness.</p>
-</center>
-      </ul>
+  <!-- Hero Section -->
+  <section id="about" class="max-w-6xl mx-auto p-6 text-center fade-in">
+    <div class="relative rounded-xl overflow-hidden shadow-2xl mb-8">
+      <img src="images/1.png" alt="Professional Team Collaboration" class="w-full h-96 object-cover">
+      <div class="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-transparent flex items-center p-8">
+        <div class="text-left text-white max-w-xl">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Expert Human Capital Solutions</h2>
+          <p class="text-lg">Driving organizational excellence through strategic HR consultation and development.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+      <h2 class="text-2xl font-bold text-blue-900 mb-6 border-b pb-3">About Our Company</h2>
+      <p class="mb-6 text-lg leading-relaxed">ApoConsult Solutions is a leading consultation agency providing expert human capital solutions. Our experienced consultants help clients overcome challenges and achieve business goals through tailored services and long-term partnerships.</p>
+      
+      <div class="grid md:grid-cols-2 gap-8 mt-8">
+        <div class="mission-card">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+              <i class="fas fa-bullseye text-blue-600 text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-blue-900">Our Mission</h3>
+          </div>
+          <p class="text-gray-700">To provide customized human capital consultation services that help our clients overcome challenges and achieve their business objectives through understanding needs, delivering tailored solutions, and fostering innovation.</p>
+        </div>
+        
+        <div class="vision-card">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+              <i class="fas fa-eye text-yellow-600 text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-blue-900">Our Vision</h3>
+          </div>
+          <p class="text-gray-700">To be the leading provider of customized human capital consultation services by building trust-based relationships, staying ahead with industry trends, attracting top talent, and expanding our reach regionally and globally.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="max-w-6xl mx-auto p-6">
-    <h2 class="text-xl font-bold text-blue-900 mb-4 text-center">Our Values</h2>
-    <img src="images/3.png" alt="Company Values" class="w-full h-72 object-cover rounded-lg mb-6">
-    <ul class="none">
-<center>
-      <li><b>Integrity</b><br> We conduct ourselves with the highest level of integrity, honesty, and ethical standards in all our interactions with our clients and stakeholders. </li>
-      <li><b>Collaboration</b><br> We foster a collaborative work environment that encourages teamwork, creativity, and innovation. We believe that working together produces the best results. </li>
-      <li><b>Excellence</b><br>We strive for excellence in everything we do, and we are committed to delivering high-quality services that meet our clients' expectations. </li>
-      <li><b>Respect</b><br> We treat everyone with respect and dignity, and we value diversity and inclusivity in our team and our clients. </li>
-      <li><b>Accountability</b><br> We take ownership of our work and our actions, and we hold ourselves accountable for the results we deliver.</li>
-      <li><b>Continuous Improvement</b><br>We are committed to continuous learning and improvement, and we stay up-to-date with the latest trends and best practices in the industry. </li>
-    </ul>
-</center>
+  <!-- Services Section -->
+  <section id="services" class="bg-gray-100 p-6 py-12">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl font-bold text-blue-900 mb-8 text-center border-b pb-3">Our Services</h2>
+      <div class="mb-8 rounded-xl overflow-hidden shadow-xl">
+        <img src="images/2.png" alt="Professional Consultation Services" class="w-full h-80 object-cover">
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="service-card">
+          <div class="flex items-center mb-3">
+            <i class="fas fa-handshake text-blue-600 text-2xl mr-3"></i>
+            <h3 class="text-xl font-bold text-blue-900">Conflict & Dispute Resolution</h3>
+          </div>
+          <p>Expert negotiators assist organizations to navigate complex disputes and reach mutually acceptable solutions through understanding all parties' concerns and interests.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="flex items-center mb-3">
+            <i class="fas fa-treaty text-blue-600 text-2xl mr-3"></i>
+            <h3 class="text-xl font-bold text-blue-900">Negotiations</h3>
+          </div>
+          <p>We help organizations negotiate contracts, partnerships, and business agreements with extensive experience to secure the best possible deals.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="flex items-center mb-3">
+            <i class="fas fa-balance-scale text-blue-600 text-2xl mr-3"></i>
+            <h3 class="text-xl font-bold text-blue-900">Policy Advocacy</h3>
+          </div>
+          <p>Influence government policies and regulations affecting businesses through navigating complex policy-making processes and developing effective strategies.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="flex items-center mb-3">
+            <i class="fas fa-graduation-cap text-blue-600 text-2xl mr-3"></i>
+            <h3 class="text-xl font-bold text-blue-900">Training & Capacity Development</h3>
+          </div>
+          <p>Customized training programs to help institutional teams develop the skills and knowledge needed for success in today's dynamic business environment.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="flex items-center mb-3">
+            <i class="fas fa-peace text-blue-600 text-2xl mr-3"></i>
+            <h3 class="text-xl font-bold text-blue-900">Mediations & Conciliations</h3>
+          </div>
+          <p>Expert mediators assist institutions to resolve disputes and conflicts in an amicable and respectful manner, finding mutually acceptable solutions.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="flex items-center mb-3">
+            <i class="fas fa-industry text-blue-600 text-2xl mr-3"></i>
+            <h3 class="text-xl font-bold text-blue-900">Employee & Industrial Relations</h3>
+          </div>
+          <p>Manage relationships with employees and unions through effective labor relations strategies, collective bargaining agreements, and dispute management.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="flex items-center mb-3">
+            <i class="fas fa-user-tie text-blue-600 text-2xl mr-3"></i>
+            <h3 class="text-xl font-bold text-blue-900">HR Support Services</h3>
+          </div>
+          <p>Comprehensive HR services including recruitment, performance management, compliance audits, policies development, and organizational reviews.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="flex items-center mb-3">
+            <i class="fas fa-certificate text-blue-600 text-2xl mr-3"></i>
+            <h3 class="text-xl font-bold text-blue-900">Compliance & Certification Support</h3>
+          </div>
+          <p>Assist businesses in Voluntary Sustainability Standards (VSS) compliance and certification through pre-audits, training, and documentation.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="bg-gray-100 p-6" id="contact">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-xl font-bold text-blue-900 mb-4 text-center">Get In Touch</h2>
-      <center><img src="images/Apoconsults (3).png" alt="Contact Us" class="w-full h-64 object-cover rounded-lg mb-6" height="100" width="100"></center>
-<center>
-      <p><strong>Lead Consultant:</strong> Apollo Kiarii (MCIMC)</p>
-      <p>Chartered mediator, negotiator, and HR expert</p>
-      <p><strong>Phone:</strong> +254 725 277 792 / +254 757 299 292</p>
-      <p><strong>Email:</strong> apollo@apoconsultsolutions.com / apollokiarii@gmail.com</p>
-      <p><strong>Address:</strong> Suite 1, Third Floor, Nexus Business Centre, Eastern Bypass, P.O. Box 16551 - 00620, Nairobi</p>
-</center>
-</div>
-</section>
+  <!-- Values Section -->
+  <section class="max-w-6xl mx-auto p-6 py-12">
+    <h2 class="text-2xl font-bold text-blue-900 mb-8 text-center border-b pb-3">Our Core Values</h2>
+    <div class="mb-8 rounded-xl overflow-hidden shadow-xl">
+      <img src="images/3.png" alt="Company Values Illustration" class="w-full h-72 object-cover">
+    </div>
     
- <div id="contactModal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50 flex items-center justify-center">
-    <div class="bg-white p-6 rounded-lg w-full max-w-lg relative">
-      <button onclick="toggleModal(false)" class="absolute top-2 right-2 text-gray-600">&times;</button>
-      <h3 class="text-lg font-bold mb-4">Send Us a Message</h3>
-      <form class="space-y-4">
-        <input type="text" placeholder="Your Name" class="w-full border border-gray-300 p-2 rounded" required />
-        <input type="email" placeholder="Your Email" class="w-full border border-gray-300 p-2 rounded" required />
-        <textarea placeholder="Your Message" class="w-full border border-gray-300 p-2 rounded" rows="4" required></textarea>
-        <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Submit</button>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="value-item">
+        <i class="fas fa-shield-alt text-green-600 text-3xl mb-4"></i>
+        <h4 class="text-lg font-bold text-blue-900 mb-2">Integrity</h4>
+        <p>Highest level of integrity, honesty, and ethical standards in all interactions with clients and stakeholders.</p>
+      </div>
+      
+      <div class="value-item">
+        <i class="fas fa-users text-blue-600 text-3xl mb-4"></i>
+        <h4 class="text-lg font-bold text-blue-900 mb-2">Collaboration</h4>
+        <p>Fostering a collaborative environment that encourages teamwork, creativity, and innovation for best results.</p>
+      </div>
+      
+      <div class="value-item">
+        <i class="fas fa-award text-yellow-600 text-3xl mb-4"></i>
+        <h4 class="text-lg font-bold text-blue-900 mb-2">Excellence</h4>
+        <p>Striving for excellence in everything we do, delivering high-quality services that exceed client expectations.</p>
+      </div>
+      
+      <div class="value-item">
+        <i class="fas fa-heart text-red-600 text-3xl mb-4"></i>
+        <h4 class="text-lg font-bold text-blue-900 mb-2">Respect</h4>
+        <p>Treating everyone with respect and dignity, valuing diversity and inclusivity in our team and clients.</p>
+      </div>
+      
+      <div class="value-item">
+        <i class="fas fa-check-circle text-purple-600 text-3xl mb-4"></i>
+        <h4 class="text-lg font-bold text-blue-900 mb-2">Accountability</h4>
+        <p>Taking ownership of our work and actions, holding ourselves accountable for the results we deliver.</p>
+      </div>
+      
+      <div class="value-item">
+        <i class="fas fa-chart-line text-indigo-600 text-3xl mb-4"></i>
+        <h4 class="text-lg font-bold text-blue-900 mb-2">Continuous Improvement</h4>
+        <p>Committed to continuous learning and staying updated with latest trends and best practices in the industry.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clients Section -->
+  <section id="clients" class="bg-gray-50 p-6 py-12">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="sponsors-title">Our Valued Clients</h2>
+      <p class="text-center text-gray-600 mb-8">Trusted by leading organizations across industries</p>
+      
+      <div class="sponsors-container">
+        <a href="https://redlandsroses.com/" target="_blank" class="sponsor-link">
+          <img src="images/7.png" alt="Redlands Roses" class="sponsor-logo">
+        </a>
+        <a href="https://flamingo.net/" target="_blank" class="sponsor-link">
+          <img src="images/5.png" alt="Flamingo" class="sponsor-logo">
+        </a>
+        <a href="#" target="_blank" class="sponsor-link">
+          <img src="images/6.png" alt="Client 3" class="sponsor-logo">
+        </a>
+        <a href="https://centrofoodindustries.com/about-us" target="_blank" class="sponsor-link">
+          <img src="images/8.png" alt="Centro Food Industries" class="sponsor-logo">
+        </a>
+        <a href="#" target="_blank" class="sponsor-link">
+          <img src="images/9.png" alt="Client 5" class="sponsor-logo">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-white p-6 py-12">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl font-bold text-blue-900 mb-8 text-center border-b pb-3">Get In Touch</h2>
+      
+      <div class="flex flex-col lg:flex-row gap-8">
+        <div class="lg:w-1/2">
+          <div class="contact-info rounded-xl shadow-lg p-8 h-full">
+            <div class="flex items-center mb-6">
+              <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                <i class="fas fa-user-tie text-blue-600 text-2xl"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-blue-900">Lead Consultant</h3>
+                <p class="text-lg">Apollo Kiarii (MCIMC)</p>
+                <p class="text-gray-600">Chartered mediator, negotiator, and HR expert</p>
+              </div>
+            </div>
+            
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <i class="fas fa-phone text-blue-600 mr-3"></i>
+                <div>
+                  <p class="font-medium">Phone</p>
+                  <p>+254 725 277 792 / +254 757 299 292</p>
+                </div>
+              </div>
+              
+              <div class="flex items-center">
+                <i class="fas fa-envelope text-blue-600 mr-3"></i>
+                <div>
+                  <p class="font-medium">Email</p>
+                  <p>apollo@apoconsultsolutions.com</p>
+                  <p>apollokiarii@gmail.com</p>
+                </div>
+              </div>
+              
+              <div class="flex items-center">
+                <i class="fas fa-map-marker-alt text-blue-600 mr-3"></i>
+                <div>
+                  <p class="font-medium">Address</p>
+                  <p>Suite 1, Third Floor, Nexus Business Centre</p>
+                  <p>Eastern Bypass, P.O. Box 16551 – 00620, Nairobi</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mt-8">
+              <button onclick="toggleModal(true)" class="custom-btn w-full">
+                <i class="fas fa-paper-plane mr-2"></i> Send Message
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="lg:w-1/2 rounded-xl overflow-hidden shadow-xl">
+          <img src="images/Apoconsults (3).png" alt="Contact ApoConsult Solutions" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Modal -->
+  <div id="contactModal" class="modal hidden">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="text-xl font-bold">Send Us a Message</h3>
+        <button onclick="toggleModal(false)" class="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <form id="contactForm" class="modal-form">
+        <div class="form-group">
+          <label for="name"><i class="fas fa-user mr-2"></i> Your Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email"><i class="fas fa-envelope mr-2"></i> Your Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="phone"><i class="fas fa-phone mr-2"></i> Phone (Optional)</label>
+          <input type="tel" id="phone" placeholder="Enter your phone number">
+        </div>
+        
+        <div class="form-group">
+          <label for="subject"><i class="fas fa-tag mr-2"></i> Subject</label>
+          <select id="subject" required>
+            <option value="">Select a subject</option>
+            <option value="general">General Inquiry</option>
+            <option value="services">Service Information</option>
+            <option value="consultation">Consultation Request</option>
+            <option value="partnership">Partnership Opportunity</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="message"><i class="fas fa-comment-dots mr-2"></i> Your Message</label>
+          <textarea id="message" rows="5" placeholder="How can we help you?" required></textarea>
+        </div>
+        
+        <button type="submit" class="submit-btn">
+          <i class="fas fa-paper-plane mr-2"></i> Send Message
+        </button>
       </form>
     </div>
   </div>
 
-  
-
-<div class="sponsors-title">Some of our clients</div>
-    <div class="sponsors-container">
-      <a href="https://redlandsroses.com/" target="_blank">
-        <img src="images/7.png" alt="Sponsor 1">
-      </a>
-      <a href="https://flamingo.net/" target="_blank">
-        <img src="images/5.png" alt="Sponsor 2">
-      </a>
-      <a href="https://sponsor3.com" target="_blank">
-        <img src="images/6.png" alt="Sponsor 3">
-      </a>
- </a>
-      <a href="https://centrofoodindustries.com/about-us" target="_blank">
-        <img src="images/8.png" alt="Sponsor 4">
-      </a>
- </a>
-      <a href="https://sponsor3.com" target="_blank">
-        <img src="images/9.png" alt="Sponsor 5">
-      </a>
-      <!-- Add more logos here -->
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white p-8 text-center">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+        <div class="mb-4 md:mb-0">
+          <h3 class="text-xl font-bold mb-2">ApoConsult Solutions</h3>
+          <p class="text-blue-200">Expert Human Capital Consultation</p>
+        </div>
+        
+        <div class="flex space-x-4 mb-4 md:mb-0">
+          <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+      
+      <div class="border-t border-blue-800 pt-6">
+        <p>&copy; <span id="current-year">2025</span> ApoConsult Solutions. All rights reserved.</p>
+        <p class="mt-2"><a href="http://www.apoconsultsolutions.com" class="text-yellow-300 hover:text-yellow-400">www.apoconsultsolutions.com</a></p>
+        <p class="mt-2 text-blue-300">Designed with excellence in mind</p>
+      </div>
     </div>
-
-  
-
-  <footer class="bg-blue-900 text-white p-4 text-center">
-    <p>&copy; 2025 ApoConsult Solutions. All rights reserved.</p>
-    <p><a href="http://www.apoconsultsolutions.com" class="underline">www.apoconsultsolutions.com</a></p>
   </footer>
-<script>
-    function toggleModal(show) {
-      const modal = document.getElementById('contactModal');
-      modal.classList.toggle('hidden', !show);
-    }
-  </script>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
